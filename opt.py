@@ -30,7 +30,7 @@ def config_parser(cmd=None):
     parser.add_argument('--net_type', type=str, default='v0')
     parser.add_argument('--finetune', type=str)
     parser.add_argument('--dataset_name', type=str, default='scared',
-                        choices=['hamlyn', 'scared', 'finetune'])
+                        choices=['hamlyn', 'scared', 'c3vd', 'finetune'])
     parser.add_argument('--use_color_volume', default=False, action="store_true",
                         help='project colors into a volume without indexing from image everytime')
     parser.add_argument('--use_density_volume', default=False, action="store_true",
